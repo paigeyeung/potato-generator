@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: Lato;
+}
+
+.button {
+    padding: 6%;
+    font-size: 2rem;
+    background-color: darkslategray;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+#potato-text img {
+    display: inline;
+}

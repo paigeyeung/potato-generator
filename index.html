@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>Generate Potato Assortments</title>
+        <link rel="stylesheet" href="/styles.css">
+       
+      </head>
+  <body>
+    <div href="javascript:void(0)" id="regenerate-button" class="button">Regenerate</div>
+    <div id="potato-text"></div>
+    <script>
+        var btn = getElementById("regenerate-button"),
+            potatoes = ["🥔","<img src=\"UwUPotato.png\"></img>"],
+            potatoText = getElementById("potato-text");
+        
+        btn.addEventListener("click", function() {
+            generateNewAssortment();
+        });
+
+        function generateNewAssortment() {                
+            var i, text = "";
+            for (i = 0; i < 100; i++) {
+                text += potatoes[Math.random() * potatoes.length];
+            }
+            potatoText.innerHTML = text;
+        }
+    </script>
+  </body>
+</div>
+</html>
