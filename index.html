@@ -11,9 +11,9 @@
     <a href="javascript:void(0)" id="regenerate-button" class="button">Generate New Assortment</a>
     <p id="potato-text">🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔</p>
     <script>
-        var btn = getElementById("regenerate-button"),
-            potatoes = ["🥔","📚"],
-            potatoText = getElementById("potato-text");
+        var btn = document.getElementById("regenerate-button"),
+            potatoes = ["🥔","<img src=\"/UwUPotato.png\"></img>"],
+            potatoText = document.getElementById("potato-text");
         
         btn.addEventListener("click", function() {
             generateNewAssortment();
