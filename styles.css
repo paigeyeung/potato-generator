@@ -14,7 +14,7 @@ body {
 }
 
 .button {
-    padding: 1rem 1.5rem;
+    padding: 1em 1.5em;
     font-size: 2rem;
     color: white;
     background-color: darkslategray;
@@ -25,7 +25,7 @@ body {
 }
 
 #potato-text {
-    width: 80%;
+    width: 100%;
 }
 
 #potato-text img {
