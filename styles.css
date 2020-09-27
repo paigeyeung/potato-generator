@@ -30,4 +30,6 @@ body {
 
 #potato-text img {
     display: inline;
+    width: 10%;
+    height: auto;
 }
