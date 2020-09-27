@@ -14,7 +14,7 @@
     </div>
     <script>
         var btn = document.getElementById("regenerate-button"),
-            potatoes = ["🥔","<img src=\"/UwUPotato.png\"></img>"],
+            potatoes = ["<img src=\"/potato_emoji.png\"></img>","<img src=\"/UwUPotato.png\"></img>"],
             potatoText = document.getElementById("potato-text");
         
         btn.addEventListener("click", function() {
@@ -24,7 +24,7 @@
         function generateNewAssortment() {                
             var i, text = "";
             for (i = 0; i < 100; i++) {
-                text += potatoes[Math.random()];
+                text += potatoes[Math.floor(Math.random()*potatoes.length)];
             }
             potatoText.innerText = text;
         }
