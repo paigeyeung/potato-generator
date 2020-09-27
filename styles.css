@@ -7,9 +7,11 @@
 .button {
     padding: 6%;
     font-size: 2rem;
+    color: white;
     background-color: darkslategray;
     border-radius: 0.5rem;
     align-items: center;
+    text-align: center;
 }
 
 #potato-text img {
