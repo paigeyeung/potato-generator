@@ -5,13 +5,22 @@
 }
 
 .button {
-    padding: 6%;
+    padding: 5%;
     font-size: 2rem;
     color: white;
     background-color: darkslategray;
     border-radius: 0.5rem;
     align-items: center;
     text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+#potato-text {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 #potato-text img {
