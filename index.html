@@ -9,7 +9,9 @@
       </head>
   <body>
     <a href="javascript:void(0)" id="regenerate-button" class="button">Generate New Assortment</a>
-    <p id="potato-text">🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔</p>
+    <div id="potato-text">
+        🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔
+    </div>
     <script>
         var btn = document.getElementById("regenerate-button"),
             potatoes = ["🥔","<img src=\"/UwUPotato.png\"></img>"],
@@ -24,7 +26,7 @@
             for (i = 0; i < 100; i++) {
                 text += potatoes[Math.random()];
             }
-            potatoText.innerHTML = text;
+            potatoText.innerText = text;
         }
     </script>
   </body>

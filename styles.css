@@ -10,6 +10,7 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .button {
@@ -24,8 +25,7 @@ body {
 }
 
 #potato-text {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    width: 80%;
 }
 
 #potato-text img {
