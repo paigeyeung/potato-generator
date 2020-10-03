@@ -35,6 +35,8 @@ body {
 
 #potato-text {
     width: 100%;
+    height: 100vh;
+    overflow: auto;
 }
 
 #potato-text img {

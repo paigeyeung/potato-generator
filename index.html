@@ -21,13 +21,37 @@
         });
 
         function generateNewAssortment() {                
-            var i, text = "";
-            for (i = 0; i < 100; i++) {
+            text = "";
+            for (var i = 0; i < 100; i++) {
                 text += potatoes[Math.floor(Math.random()*potatoes.length)];
             }
             potatoText.innerHTML = text;
         }
+
+        function generateMorePotatoes() {
+            var text = "";
+            for (var i = 0; i < 20; i++) {
+                text += potatoes[Math.floor(Math.random()*potatoes.length)];
+            }
+            potatoText.innerHTML += text;
+        }
+
+        var loadMore = function() {
+            generateMorePotatoes();
+        }
+
+        potatoText.addEventListener('scroll', function() {
+        if (potatoText.scrollTop + potatoText.clientHeight >= potatoText.scrollHeight) {
+            loadMore();
+        }
+        });
+        
+        console.log(potatoText.scrollTop + " " + potatoText.clientHeight + potatoText.scrollHeight);
+        
     </script>
   </body>
+  <!-- <footer>
+      <a href="https://github.com/paigeyeung/potato-generator">source code</a>
+  </footer> -->
 </div>
 </html>
