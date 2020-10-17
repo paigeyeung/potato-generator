@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: 'Alphaclouds';
+    src: URL('Alphaclouds-EGMW.ttf') format('truetype');
+ }
+
 * {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: Lato;
-    background-color: lightpink;
+    font-family: Alphaclouds, Lato;
+    text-transform: uppercase;
+    background-color: pink;
 }
 
 body {
@@ -17,8 +23,9 @@ body {
 .button {
     padding: 1em 1.5em;
     font-size: 1.5rem;
+    max-width: 70%;
     color: white;
-    background-color: darkslategray;
+    background-color: darkolivegreen;
     border-radius: 0.5rem;
     text-decoration: none;
     display: inline-block;
@@ -45,4 +52,12 @@ body {
     display: inline;
     width: 10%;
     height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    #potato-text img {
+        display: inline;
+        width: 20%;
+        height: auto;
+    } 
 }
